@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Drink to go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -71,7 +71,8 @@
     <h1 class="visually-hidden">Пейте кофе без вреда для здоровья!</h1>
     <section class="new-position">
       <div class="new-position__wrapper slider">
-        <h2 class="new-position__title title">Новинка!</h2>
+        <h2 class="visually-hidden">Наши новинки</h2>
+        <b class="slider__banner banner">Новинка!</b>
         <div class="new-position__list slider__list">
           <div class="new-position__item slider__item">
             <img class="new-position__item-image" src="img/new-items/decaf-flat-white-mobile.png" width="280"
@@ -137,8 +138,8 @@
     </section>
     <section class="advantages">
       <div class="advantages__wrapper container">
-        <h2 class="advantages__title title">Преимущества</h2>
-        <p class="advantages__reasons"> Главные причины выбрать Drink2Go</p>
+        <b class="advantages__banner banner">Преимущества</b>
+        <h2 class="advantages__title title"> Главные причины выбрать Drink2Go</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--time">
             <h3 class="advantages__denomination">Скорость</h3>
@@ -163,8 +164,8 @@
     </section>
     <section class="catalog">
       <div class="catalog__wrapper container">
-        <h2 class="catalog__title title">Каталог</h2>
-        <p class="catalog__description">Каталог кофейных напитков</p>
+        <b class="catalog__banner banner">Каталог</b>
+        <h2 class="catalog__title title">Каталог кофейных напитков</h2>
         <form class="catalog__filters filters" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filters__group cost">
             <legend class="filters__title">Цена</legend>
@@ -390,13 +391,13 @@
               </a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link">1</a>
+              <a class="pagination__link" href="#">1</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link pagination__link--current">2</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link">3</a>
+              <a class="pagination__link" href="#">3</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link pagination__link--next" href="#">
