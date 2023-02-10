@@ -1,0 +1,26 @@
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer__logo-label {
+  display: block;
+}
+
+.footer__additional-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 22px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  display: block;
+  cursor: pointer;
+}
+
+.footer__copyright {
+  padding: 20px 0 30px;
+}

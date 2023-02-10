@@ -1,0 +1,32 @@
+.contact__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact__icon {
+  display: block;
+  margin-right: 6px;
+  margin-top: 2px;
+}
+
+.contact__address {
+  display: block;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  width: 261px;
+}
+
+.contact__phone {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var( --basic-color-black);
+}

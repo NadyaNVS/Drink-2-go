@@ -1,0 +1,28 @@
+.catalog {
+  background-color: var(--background-color-lightest-grey);
+}
+.catalog__wrapper {
+  padding: 50px 0 44px;
+}
+
+.catalog__banner {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.catalog__title {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.catalog__filters {
+  margin-bottom: 40px;
+}
+
+.catalog__select {
+margin-bottom: 16px;
+}
+
+.catalog__product-list {
+  margin-bottom: 40px;
+}

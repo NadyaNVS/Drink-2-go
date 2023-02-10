@@ -1,0 +1,37 @@
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting__label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sorting__control {
+  display: flex;
+  min-width: 165px;
+  margin-left: auto;
+}
+
+.sorting__select {
+  display: block;
+  position: relative;
+  padding: 4px 27px 4px 10px ;
+  font: inherit;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: inherit;
+  color: var(--basic-color-primary);
+  border: none;
+  appearance: none;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  cursor: pointer;
+}
+
+

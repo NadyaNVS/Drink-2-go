@@ -1,0 +1,52 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.filters__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filters__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+
+.filters__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.filters__item {
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.filters__button-wrapper {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+}
+
+.filters__button {
+  font-size: 13px;
+
+
+  &--reset {
+    color: var(--basic-color-primary);
+    background-color: var(--basic-color);
+    font-size: 14px;
+  }
+}
+
+.filters__button:first-child {
+  margin-bottom: 26px;
+}

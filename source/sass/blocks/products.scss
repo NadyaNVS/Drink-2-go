@@ -1,0 +1,14 @@
+.products__list {
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+.products__item {
+  padding: 40px 20px 20px 20px;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

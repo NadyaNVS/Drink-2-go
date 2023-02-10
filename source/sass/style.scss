@@ -2,8 +2,34 @@
 @import "variables.scss";
 @import "global.scss";
 @import "fonts.scss";
+@import "container.scss";
 
 /* BLOCKS */
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/user-list.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/new-position.scss";
+@import "./blocks/banner.scss";
+@import "./blocks/price.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/title.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/filters.scss";
+@import "./blocks/milk.scss";
+@import "./blocks/country.scss";
+@import "./blocks/sorting.scss";
+@import "./blocks/products.scss";
+@import "./blocks/card.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/caption.scss";
+@import "./blocks/information.scss";
+@import "./blocks/contact.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/slider.scss"
 

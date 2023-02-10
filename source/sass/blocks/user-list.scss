@@ -1,0 +1,13 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.user-list__link {
+  display: flex;
+  height: 60px;
+  min-width: 60px;
+  align-items: center;
+  justify-content: center;
+}
