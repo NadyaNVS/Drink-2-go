@@ -11,14 +11,13 @@
   justify-content: space-between;
   align-items: center;
 
-.navigation__additional-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
+// .navigation__additional-wrapper {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
   @media (min-width: $tablet-width) {
     align-items: center;
-    padding: 22px 0;
   }
 }
 
@@ -28,7 +27,7 @@ height: 36px;
 margin: 12px 0;
 
 @media (min-width: $tablet-width) {
-  margin-bottom: 0;
+  margin: 22px 0;
 }
 }
 
@@ -49,11 +48,68 @@ margin: 12px 0;
   }
 }
 
-.navigation__toggle::before {
+.navigation--closed .navigation__toggle::before {
   position: absolute;
   content: "";
   width: 16px;
   height: 16px;
   background-image: url("../img/burger-menu.svg");
+}
+
+.navigation--closed .site-list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: var(--basic-color-black);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.navigation--opened .site-list {
+  background-color: var(--basic-color);
+  position: absolute;
+  top: 59px;
+  z-index: 2;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.navigation--nojs .navigation__toggle {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.navigation--nojs .site-list {
+  @media (max-width: $mobile-width-only) {
+    position: static;
+    display: block;
+    min-height: 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+}
+
+.navigation--nojs .site-list__item {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
 }
 
