@@ -46,5 +46,9 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 32px 20px;
+
+    &--current {
+      border-bottom: 2px solid var(--basic-color-primary);
+    }
   }
 }

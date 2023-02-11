@@ -4,6 +4,10 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .pagination__item {

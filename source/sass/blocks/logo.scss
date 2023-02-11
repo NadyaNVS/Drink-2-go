@@ -1,0 +1,28 @@
+.logo {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 320px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo__image {
+  @media (min-width: $tablet-width) {
+  width: 82px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}
+
+.logo__description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-left: 20px;
+    width: 170px;
+  }
+}

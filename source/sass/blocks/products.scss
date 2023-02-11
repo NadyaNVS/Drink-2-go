@@ -2,6 +2,15 @@
 padding: 0;
 margin: 0;
 list-style-type: none;
+
+@media (min-width: $tablet-width) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px
+}
+@media (min-width: $desktop-width) {
+  grid-template-columns: repeat(3, 1fr);
+}
 }
 
 .products__item {
@@ -10,5 +19,10 @@ list-style-type: none;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 50px 30px 30px 30px;
   }
 }

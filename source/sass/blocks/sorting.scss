@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
 }
 
 .sorting__label {
@@ -11,8 +15,12 @@
 }
 .sorting__control {
   display: flex;
-  min-width: 165px;
+  width: 165px;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .sorting__select {

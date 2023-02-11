@@ -20,11 +20,15 @@
   padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 60px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    column-gap: 30px;
   }
   }
 
@@ -35,6 +39,11 @@
   @media (min-width: $tablet-width) {
     width: 476px;
     height: 476px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
   }
 }
 
@@ -85,6 +94,10 @@
     font-size: 20px;
     line-height: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .new-position__buy-wrapper {
@@ -96,5 +109,22 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: start;
+  }
+}
+
+.new-position__additional-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  @media (min-width: $desktop-width) {
+    align-items: start;
   }
 }

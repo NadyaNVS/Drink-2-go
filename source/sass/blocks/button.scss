@@ -1,5 +1,6 @@
 .button {
   display: block;
+  font-family: var(--main-font);
   background-color: var(--basic-color-primary);
   color: var(--basic-color);
   border-radius: 4px;
@@ -8,6 +9,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  box-sizing: border-box;
   border: none;
   text-decoration: none;
 }

@@ -9,7 +9,12 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 160px;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
+
 
 .social__link {
   display: flex;
