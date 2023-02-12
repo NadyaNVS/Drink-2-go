@@ -1,17 +1,30 @@
 .contact__wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 16px;
+  min-width: 280px;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 317px;
+  }
+}
+
+.contact__title {
+  margin-bottom: 22px;
 }
 
 .contact__icon {
-  display: block;
-  margin-right: 6px;
-  margin-top: 2px;
+  top: 2px;
+position: absolute;
 }
 
 .contact__address {
@@ -20,13 +33,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  width: 261px;
+  margin-left: 20px;
 }
 
 .contact__phone {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin-left: 20px;
   text-decoration: none;
   color: var( --basic-color-black);
 }

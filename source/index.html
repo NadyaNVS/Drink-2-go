@@ -192,29 +192,36 @@
         <div class="catalog__grid-wrapper">
           <form class="catalog__filters filters" action="https://echo.htmlacademy.ru/" method="get">
             <div class="filters__wrapper">
-              <fieldset class="filters__group cost">
+              <fieldset class="filters__group">
                 <legend class="filters__title">Цена</legend>
-                <div class="cost__scale scale">
-                  <div class="scale__bar">
-                    <button class="scale__toggle scale__toggle--min" type="button">
-                      <span class="visually-hidden">Изменить минимальную стоимость.</span>
-                    </button>
-                    <button class="scale__toggle scale__toggle--max" type="button">
-                      <span class="visually-hidden">Изменить максимальную стоимость.</span>
-                    </button>
+
+                <div class="filters__additional-wrapper range">
+
+                  <div class="range__scale">
+                    <div class="range__bar" style="width: 240px;">
+                      <button class="range__toggle range__toggle--min" type="button">
+                        <span class="visually-hidden">Изменить минимальную стоимость.</span>
+                      </button>
+                      <button class="range__toggle range__toggle--max" type="button">
+                        <span class="visually-hidden">Изменить максимальную стоимость.</span>
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <div class="cost__inputs range">
-                  <div class="range__wpapper">
+
+                  <div class="range__inputs">
+
                     <label class="visually-hidden" for="min-cost">от</label>
-                    <input class="range__input range__input--from" type="number" value="0" id="min-cost"
+                    <input class="range__input range__input--from" type="number" placeholder="0" id="min-cost"
                       name="min-cost">
-                    <span>-</span>
+                    <span class="range__devider">-</span>
                     <label class="visually-hidden" for="max-cost">до</label>
                     <input class="range__input range__input--to" type="number" value="900" id="max-cost"
                       name="max-cost">
+
                   </div>
+
                 </div>
+
               </fieldset>
               <fieldset class="filters__group milk">
                 <legend class="filters__title">Наличие молока</legend>
@@ -465,7 +472,7 @@
       </div>
     </section> -->
     <div class="footer__wrapper container">
-      <div class="footer__flex-wrapper">
+      <div class="footer__grid-wrapper">
         <div class="footer__additional-wrapper">
           <a class="footer__logo">
             <picture>
@@ -474,6 +481,9 @@
               <img class="footer__logo-label" src="img/logo-company-short.svg" alt="Логотип Дринк ту гоу." width="82"
                 height="36">
             </picture>
+
+            <span class="footer__logo-description">Интернет-магазин
+              кофейных напитков</span>
           </a>
           <section class="footer__social social">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>

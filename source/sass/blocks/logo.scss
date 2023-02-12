@@ -23,6 +23,8 @@
   @media (min-width: $desktop-width) {
     display: block;
     margin-left: 20px;
-    width: 170px;
+    max-width: 126px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
