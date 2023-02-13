@@ -36,6 +36,15 @@ line-height: 16px;
 .information__link {
   text-decoration: none;
   color: var( --basic-color-black);
+
+  &:hover,
+  &:focus {
+    color: var(--alt-color-primary-lighter);
+  }
+
+  &:active {
+    color: var(--alt-color-primary-darker);
+  }
 }
 
 .information__wrapper {

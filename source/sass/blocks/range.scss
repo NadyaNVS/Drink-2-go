@@ -4,13 +4,30 @@
   margin-bottom: 36px;
   background-color: var(--alt-color-light-grey);
 
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    margin-bottom: 32px;
+   }
+
+   @media (min-width: $desktop-width) {
+    width: 318px;
+  }
 }
 
 .range__bar {
  background-color: var(--alt-color-primary-lighter);
  height: 4px;
+ width: 240px;
  position: absolute;
  bottom: -1px;
+
+ @media (min-width: $tablet-width) {
+  width: 190px;
+ }
+
+ @media (min-width: $desktop-width) {
+  width: 274px;
+}
 }
 
 .range__toggle {
@@ -51,6 +68,7 @@
   }
 
   &:active {
+    border-color: var( --basic-color-primary);
     &::before {
       background-color: var(--alt-color-primary-lighter);
     }
@@ -63,11 +81,27 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-}
+  position: relative;
 
-.range__devider{
-  display: block;
-  color: var(--basic-color-grey);
+  &::before {
+    position: absolute;
+    left: 135px;
+    display: block;
+    content: "";
+    width: 9px;
+    height: 2px;
+    background-color: var(--basic-color-grey);
+
+    @media (min-width: $tablet-width) {
+      width: 7px;
+      left: 106px;
+     }
+
+     @media (min-width: $desktop-width) {
+      width: 10px;
+      left: 154px;
+    }
+  }
 }
 
 .range__input {
@@ -89,6 +123,14 @@
     color: var(--basic-color-grey);
   }
 
+  @media (min-width: $tablet-width) {
+    width: 93px;
+   }
+
+   @media (min-width: $desktop-width) {
+    width: 134px;
+  }
+
   &:hover {
     border-color: var(--alt-color-primary-opacity);
   }
@@ -99,3 +141,16 @@
     outline: none;
   }
 }
+
+.range__input[type="number"]::-webkit-outer-spin-button,
+.range__input[type="number"]::-webkit-inner-spin-button {
+  // stylelint-disable
+  -webkit-appearance: none;
+// stylelint-enable
+}
+
+// .range__input[type="number"] {
+//   // stylelint-disable
+//   -moz-appearance: textfield;
+// // stylelint-enable
+// }

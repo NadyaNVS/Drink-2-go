@@ -1,3 +1,16 @@
+.footer__map {
+  height: 420px;
+
+  @media (min-width: $tablet-width) {
+    height: 480px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 540px;
+  }
+}
+
+
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;

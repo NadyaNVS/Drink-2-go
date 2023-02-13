@@ -138,18 +138,18 @@ const watcher = () => {
 
 //Build
 
-export const build = gulp.series(
-  clean,
-  copy,
-  optimizeImages,
-  gulp.parallel(
-    html,
-    styles,
-    scripts,
-    svg,
-    createSprite
-  )
-);
+// export const build = gulp.series(
+//   clean,
+//   copy,
+//   optimizeImages,
+//   gulp.parallel(
+//     html,
+//     styles,
+//     scripts,
+//     svg,
+//     createSprite
+//   )
+// );
 
 //Default
 

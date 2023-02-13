@@ -14,6 +14,7 @@
 }
 
 .site-list__item{
+  box-sizing: border-box;
   border-top: 1px solid var(--basic-color-secondary);
 
   &:last-child {
@@ -33,6 +34,7 @@
 .site-list__link {
   text-decoration: none;
   display: block;
+  box-sizing: border-box;
   // position: relative;
   text-transform: uppercase;
   font-size: 12px;
@@ -48,7 +50,20 @@
     padding: 32px 20px;
 
     &--current {
+      color: var(--basic-color-primary);
+      padding-bottom: 30px;
       border-bottom: 2px solid var(--basic-color-primary);
     }
   }
+
+  &:hover,
+  &:focus {
+    color: var(--basic-color-primary);
+  }
+
+  &:active{
+    color: var(--basic-color-primary);
+    background-color: var(--basic-color-secondary);
+  }
 }
+

@@ -1,0 +1,60 @@
+.radio__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+    &--disabled {
+    color: var(--basic-color-grey);
+    cursor: default;
+  }
+}
+
+.radio__mark-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--basic-color);
+  border: 2px solid var(--basic-color-grey);
+  margin-right: 10px;
+}
+
+.radio__control[type=radio]:checked + .radio__mark-control {
+  border-color: var( --basic-color-primary);
+}
+
+.radio__control[type=radio]:checked + .radio__mark-control::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--alt-color-primary-lighter);
+}
+
+.radio__control[type=radio]:hover + .radio__mark-control,
+.radio__control[type=radio]:focus + .radio__mark-control {
+  border-color: var(--alt-color-primary-lighter);
+}
+
+.radio__control[type="radio"]:hover + .radio__mark-control::before,
+.radio__control[type="radio"]:focus + .radio__mark-control::before  {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--alt-color-primary-opacity);
+}
+
+.radio__control[type="radio"]:disabled + .radio__mark-control {
+  border-color: var( --alt-color-light-grey);
+  cursor: default;
+
+  &::before {
+    display: none;
+  }
+}
