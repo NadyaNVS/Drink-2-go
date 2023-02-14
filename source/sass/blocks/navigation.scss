@@ -21,10 +21,17 @@
   }
 }
 
+.navigation > .container {
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+    width: auto;
+  }
+}
+
 .navigation__logo {
 display: block;
 height: 36px;
-margin: 12px 0;
+margin: 12px 0 12px 20px;
 
 @media (min-width: $tablet-width) {
   margin: 22px 0;
