@@ -7,7 +7,6 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   width: 160px;
 
   @media (min-width: $desktop-width) {
@@ -15,6 +14,13 @@
   }
 }
 
+.social__item {
+  margin-right: 19px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
 .social__link {
   display: flex;

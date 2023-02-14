@@ -36,13 +36,13 @@
 .footer__additional-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 22px 0;
+  padding: 20px 0;
   align-items: center;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-bottom: 32px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,11 +81,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 30px;
+    padding-top: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 20px;
+    padding-top: 28px;
   }
 }
 

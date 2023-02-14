@@ -45,7 +45,6 @@
 .new-position__item-name {
   font-size: 36px;
   line-height: 48px;
-  font-weight: 700;
   letter-spacing: 0.02em;
   text-align: center;
   margin: 0;
@@ -75,7 +74,6 @@
 .new-position__item-description {
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
@@ -87,6 +85,14 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-bottom: 40px;
+  }
+}
+
+.new-position__item-description br {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -94,7 +100,7 @@
   display: flex;
   flex-wrap: wrap;
   align-self: center;
-  min-width: 230px;
+  min-width: 232px;
   justify-content: space-between;
   align-items: center;
 
@@ -104,6 +110,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 229px;
     align-self: start;
   }
 }
@@ -119,13 +126,20 @@
   @media (min-width: $tablet-width) {
     padding-left: 80px;
     padding-right: 80px;
-    margin-bottom: 20px;
   }
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
+    margin-top: 11px;
     padding-right: 80px;
     align-items: start;
   }
 }
 
+.new-position__wrapper-button {
+  margin-right: 2px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}

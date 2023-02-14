@@ -8,7 +8,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 40px;
     }
 
@@ -21,15 +20,30 @@
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+
+    &--cost{
+      min-width: 220px;
+      margin-right: 21px;
+    }
+
+    &--milk{
+      min-width: 210px;
+      margin-right: 38px;
+    }
+
+    &--country{
+    min-width: 197px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+    margin-right: 0;
   }
 
   &:last-child {
@@ -47,9 +61,35 @@
 
 .filters__title {
   font-weight: 600;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 22px;
+
+
+  &--cost {
+    margin-bottom: 32px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 29px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 33px;
+    }
+  }
+
+  &--milk {
+    margin-bottom: 22px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &--country {
+    margin-bottom: 20px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 18px;
+    }
+  }
 }
 
 .filters__list {
@@ -59,12 +99,19 @@
 }
 
 .filters__item {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 
 &:last-child {
   margin-bottom: 0;
 }
+
+
 }
 
 .filters__button-wrapper {
@@ -78,11 +125,13 @@ max-width: 160px;
   display: grid;
   grid-template-columns: 148px 138px;
   column-gap: 30px;
+  margin-right: 55px;
   max-width: none;
 }
 
 @media (min-width: $desktop-width) {
   grid-template-columns: repeat(2, 150px);
+  column-gap: 18px;
 }
 }
 
@@ -91,7 +140,8 @@ max-width: 160px;
   padding: 10px 14px;
 
   @media (min-width: $tablet-width) {
-    padding: 8px 4px;
+    font-size: 14px;
+    padding: 8px 3px;
   }
 }
 
@@ -114,5 +164,15 @@ max-width: 160px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.filters__additional-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-left: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

@@ -3,9 +3,9 @@ const map = L.map('map')
     console.log('Карта инициализирована');
   })
   .setView({
-    lat: 59.96840,
-    lng: 30.31731,
-  }, 17);
+    lat: 59.968322,
+    lng: 30.317359,
+  }, 20);
 
   L.tileLayer(
     'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -17,13 +17,13 @@ const map = L.map('map')
 const pinIcon = L.icon({
   iconUrl: './img/map-castom-pin.svg',
   iconSize: [38, 50],
-  iconAnchor: [10, 30],
+  iconAnchor: [5, 25],
 });
 
 const pinMarker = L.marker(
   {
-    lat: 59.96840,
-    lng: 30.31731,
+    lat: 59.968322,
+    lng: 30.317359,
   },
   {
     icon: pinIcon,

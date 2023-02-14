@@ -5,7 +5,7 @@
     background-color: var(--background-color-flat-white);
 
     @media (min-width: $tablet-width) {
-      background: linear-gradient(to bottom,var(--background-color-flat-white) 78%, var(--basic-color) 22% );
+      background: linear-gradient(to bottom,var(--background-color-flat-white) 77%, var(--basic-color) 23% );
     }
 
     @media (min-width: $desktop-width) {
@@ -18,7 +18,7 @@
     background-color: var(--background-color-primary-medium);
 
     @media (min-width: $tablet-width) {
-      background: linear-gradient(to bottom,var(--background-color-primary-medium) 78%, var(--basic-color) 22% );
+      background: linear-gradient(to bottom,var(--background-color-primary-medium) 77%, var(--basic-color) 23% );
     }
 
     @media (min-width: $desktop-width) {
@@ -31,7 +31,7 @@
     background-color: var(--background-color-grey);
 
     @media (min-width: $tablet-width) {
-      background: linear-gradient(to bottom,var(--background-color-grey) 78%, var(--basic-color) 22% );
+      background: linear-gradient(to bottom,var(--background-color-grey) 77%, var(--basic-color) 23% );
     }
 
     @media (min-width: $desktop-width) {
@@ -131,7 +131,7 @@ right: 0;
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 70px;
+  bottom: 66px;
 }
 
 .swiper-pagination-bullet {

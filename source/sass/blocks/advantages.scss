@@ -11,19 +11,19 @@
 }
 
 .advantages__banner {
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .advantages__title {
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 }
 
@@ -54,14 +54,14 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-top: 32px;
+  margin-bottom: 32px;
 
   &:last-child {
     margin-bottom: 0;
   }
   @media (min-width: $tablet-width) {
     align-items: start;
-    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 71px;
   }
 
@@ -95,7 +95,7 @@
   line-height: 32px;
   margin: 0;
   padding: 0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -121,18 +121,66 @@
   }
 }
 
+.advantages__item--time{
+  @media (min-width: $tablet-width) {
+  padding-left: 82px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+.advantages__item--power{
+  @media (min-width: $tablet-width) {
+  padding-left: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+}
+}
+
 .advantages__item--time::before {
 background-image: url("../img/icon-time.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+    left:10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+  }
 }
 
 .advantages__item--convinience::before {
   background-image: url("../img/icon-convinience.svg");
+
+  @media (min-width: $tablet-width) {
+    top: -1px;
+  }
 }
 
 .advantages__item--power::before {
   background-image: url("../img/icon-power.svg");
+
+  @media (min-width: $tablet-width) {
+    left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+  }
 }
 
 .advantages__item--eco::before {
   background-image: url("../img/icon-eco.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }

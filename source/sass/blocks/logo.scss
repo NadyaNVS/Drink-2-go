@@ -2,7 +2,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    min-width: 320px;
+    min-width: 316px;
     align-items: center;
     justify-content: space-between;
   }
@@ -26,5 +26,6 @@
     max-width: 126px;
     font-size: 12px;
     line-height: 16px;
+    margin-top: -4px;
   }
 }
