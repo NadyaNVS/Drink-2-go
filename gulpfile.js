@@ -51,19 +51,19 @@ const scripts = () => {
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
   .pipe(sharp())
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
 }
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
 }
 
 //WebP
 
 // const createWebp = () => {
 //   return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'])
-//   .pipe(webpQuality({
+//   .pipe(squoosh({
 //     webp: {}
 //   }))
 //   .pipe(gulp.dest('build/img'));
@@ -103,7 +103,7 @@ const copy = (done) => {
 
 //Clean
 const clean = () => {
-  return deleteAsync('build')
+  return deleteAsync('build');
 }
 
 
