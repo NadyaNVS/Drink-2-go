@@ -8,11 +8,27 @@
   }
 }
 
+.user-list__item {
+  @media (min-width: $desktop-width) {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  }
+}
+
 .user-list__link {
   display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
   padding: 22px;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--basic-color-black);
+
 
   @media (min-width: $tablet-width) {
     padding: 32px 22px;
@@ -20,5 +36,58 @@
 
   @media (min-width: $desktop-width) {
     padding: 32px 20px;
+  }
+
+  &--current {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--basic-color-primary);
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--basic-color-primary);
+  }
+
+  &:active {
+    background-color: var(--basic-color-secondary);
+  }
+}
+
+.user-list__icon {
+  display: block;
+  fill: var(--basic-color-black);
+}
+
+.user-list__item:hover .user-list__icon {
+  fill: var(--basic-color-primary);
+}
+
+.user-list__item:active .user-list__icon {
+  fill: var(--basic-color-black);
+
+  @media (min-width: $desktop-width) {
+    fill: var(--basic-color-primary);
+  }
+}
+
+
+
+
+.user-list__login-label{
+  display: none;
+
+  @media (min-width: $desktop-width) {
+   display: block;
+   box-sizing: border-box;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+    margin-left: 8px;
   }
 }

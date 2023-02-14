@@ -2,11 +2,6 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-
-  &--disabled {
-    color: var(--basic-color-grey);
-    cursor: default;
-  }
 }
 
 .checkbox__mark-control {
@@ -47,5 +42,24 @@
 .checkbox__control[type=checkbox]:disabled + .checkbox__mark-control {
   border-color: var(--alt-color-light-grey);
   background-color: var(--alt-color-light-grey);
+  cursor: default;
+
+  &::before {
+    background-color: var(--background-color-lightest-grey);
+  }
+}
+
+.checkbox__control[type=checkbox]:checked:disabled + .checkbox__mark-control {
+  border-color: var(--alt-color-light-grey);
+  background-color: var(--alt-color-light-grey);
+  cursor: default;
+
+  &::before {
+    background-color: var( --basic-color-grey);
+  }
+}
+
+.checkbox__control[type=checkbox]:disabled ~ .checkbox__name {
+  color: var(--basic-color-grey);
   cursor: default;
 }

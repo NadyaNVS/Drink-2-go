@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <title>Drink to go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.min.css">
+
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -30,18 +32,20 @@
         <ul class="navigation__menu user-list">
           <li class="user-list__item">
             <a class="user-list__link" href="#">
-              <svg class="user-list__login-icon" width="16" height="16">
+              <svg class="user-list__icon" width="16" height="16">
                 <use href="img/sprite.svg#login-icon"></use>
               </svg>
-
+              <span class="user-list__login-label">Войти</span>
             </a>
           </li>
           <li class="user-list__item">
             <a class="user-list__link" href="#">
-              <svg class="user-list__cart-icon" width="16" height="16">
+              <svg class="user-list__icon" width="16" height="16">
                 <use href="img/sprite.svg#cart"></use>
               </svg>
+              <span class="user-list__login-label">Корзина</span>
             </a>
+
           </li>
         </ul>
 
@@ -70,139 +74,142 @@
   </header>
 
   <main class="main-container">
-    <h1 class="visually-hidden">Пейте кофе без вреда для здоровья!</h1>
-    <section class="new-position slider">
-      <div class="new-position__wrapper container">
-        <h2 class="visually-hidden">Наши новинки</h2>
+    <h1 class="visually-hidden">Интернет-магазин кофейных напитков "Drink2Go"</h1>
+    <section class="new-position swiper">
+      <h2 class="visually-hidden">Наши новинки</h2>
+      <div class="new-position__list swiper-wrapper">
+        <div class="new-position__item swiper-slide swiper-slide--flat-white container">
+          <div class="new-position__wrapper-image">
 
-        <div class="new-position__list slider__list">
-          <div class="new-position__item new-position__item--flat-white slider__item">
-            <div class="new-position__wrapper-image">
+            <picture>
 
-              <picture>
-
-                <!-- <source type="image/webp" media="(min-width: 1440px)"
+              <!-- <source type="image/webp" media="(min-width: 1440px)"
                   srcset="img/new-items/decaf-flat-white-desktop.webp 1x, img/new-items/decaf-flat-white-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/new-items/decaf-flat-white-tablet.webp 1x, img/new-items/decaf-flat-white-tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="img/new-items/decaf-flat-white-mobile.webp 1x, img/new-items/decaf-flat-white-mobile@2x.webp 2x"> -->
-                <source media="(min-width: 1440px)"
-                  srcset="img/new-items/decaf-flat-white-desktop.png 1x, img/new-items/decaf-flat-white-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/new-items/decaf-flat-white-tablet.png 1x, img/new-items/decaf-flat-white-tablet@2x.png 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/new-items/decaf-flat-white-desktop.png 1x, img/new-items/decaf-flat-white-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/new-items/decaf-flat-white-tablet.png 1x, img/new-items/decaf-flat-white-tablet@2x.png 2x">
 
-                <img class="new-position__item-image" src="img/new-items/decaf-flat-white-mobile.png" width="280"
-                  height="280" srcset="img/new-items/decaf-flat-white-mobile@2x.png 2x"
-                  alt="Внешний вид новинки кофе Декаф Флэт Уайт.">
-              </picture>
+              <img class="new-position__item-image" src="img/new-items/decaf-flat-white-mobile.png" width="280"
+                height="280" srcset="img/new-items/decaf-flat-white-mobile@2x.png 2x"
+                alt="Внешний вид новинки кофе Декаф Флэт Уайт.">
+            </picture>
 
-            </div>
-            <div class="new-position__additional-wrapper">
-              <b class="new-position__banner banner">Новинка!</b>
-              <h3 class="new-position__item-name">Декаф Флэт Уайт</h3>
-              <p class="new-position__item-description">Свежесваренный кофе без кофеина из Эфиопии с натуральным
-                фермерским
-                молоком — то, что нужно для расслабления
-                после тяжёлого рабочего дня</p>
+          </div>
+          <div class="new-position__additional-wrapper">
+            <b class="new-position__banner banner">Новинка!</b>
+            <h3 class="new-position__item-name">Декаф Флэт Уайт</h3>
+            <p class="new-position__item-description">Свежесваренный кофе без кофеина из Эфиопии с натуральным
+              фермерским
+              молоком — то, что нужно для расслабления
+              после тяжёлого рабочего дня</p>
 
-              <div class="new-position__buy-wrapper">
-                <div class="new-position__price price">
-                  <span class="price__old">295₽</span>
-                  225₽
-                </div>
-                <div class="new-position__wrapper-button">
-                  <a class="new-position__button button" href="#">Заказать</a>
-                </div>
+            <div class="new-position__buy-wrapper">
+              <div class="new-position__price price">
+                <span class="price__old">295₽</span>
+                225₽
+              </div>
+              <div class="new-position__wrapper-button">
+                <a class="new-position__button button" href="#">Заказать</a>
               </div>
             </div>
           </div>
-          <div class="new-position__item new-position__item--lavander-latte slider__item">
-            <div class="new-position__wrapper-image">
-              <picture>
+        </div>
 
-                <!-- <source type="image/webp" media="(min-width: 1440px)"
+
+        <div class="new-position__item swiper-slide swiper-slide--lavander-latte container">
+          <div class="new-position__wrapper-image">
+            <picture>
+
+              <!-- <source type="image/webp" media="(min-width: 1440px)"
                   srcset="img/new-items/lavender-latte-desktop.webp 1x, img/new-items/lavender-latte-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/new-items/lavender-latte-tablet.webp 1x, img/new-items/lavender-latte-tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="img/new-items/lavender-latte-mobile.webp 1x, img/new-items/lavender-latte-mobile@2x.webp 2x"> -->
-                <source media="(min-width: 1440px)"
-                  srcset="img/new-items/lavender-latte-desktop.png 1x, img/new-items/lavender-latte-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/new-items/lavender-latte-tablet.png 1x, img/new-items/lavender-latte-tablet@2x.png 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/new-items/lavender-latte-desktop.png 1x, img/new-items/lavender-latte-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/new-items/lavender-latte-tablet.png 1x, img/new-items/lavender-latte-tablet@2x.png 2x">
 
 
-                <img class="new-position__item-image" src="img/new-items/lavender-latte-mobile.png" width="280"
-                  height="280" srcset="img/new-items/lavender-latte-mobile@2x.png 2x"
-                  alt="Внешний вид новинки кофе Лавандовый Латте.">
-              </picture>
-            </div>
-            <div class="new-position__additional-wrapper">
-              <b class="new-position__banner banner">Новинка!</b>
-              <h3 class="new-position__item-name">Лавандовый Латте</h3>
-              <p class="new-position__item-description">Невероятное сочетание перуанской высокогорной арабики с молоком
-                ламы
-                и
-                лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-              <div class="new-position__buy-wrapper">
-                <div class="new-position__price price">
-                  <span class="price__old">285₽</span>
-                  265₽
-                </div>
-                <div class="new-position__wrapper-button">
-                  <a class="new-position__button button" href="#">Заказать</a>
-                </div>
+              <img class="new-position__item-image" src="img/new-items/lavender-latte-mobile.png" width="280"
+                height="280" srcset="img/new-items/lavender-latte-mobile@2x.png 2x"
+                alt="Внешний вид новинки кофе Лавандовый Латте.">
+            </picture>
+          </div>
+          <div class="new-position__additional-wrapper">
+            <b class="new-position__banner banner">Новинка!</b>
+            <h3 class="new-position__item-name">Лавандовый Латте</h3>
+            <p class="new-position__item-description">Невероятное сочетание перуанской высокогорной арабики с
+              молоком
+              ламы
+              и
+              лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+            <div class="new-position__buy-wrapper">
+              <div class="new-position__price price">
+                <span class="price__old">285₽</span>
+                265₽
+              </div>
+              <div class="new-position__wrapper-button">
+                <a class="new-position__button button" href="#">Заказать</a>
               </div>
             </div>
           </div>
-          <div class="new-position__item new-position__item--triple-espresso slider__item">
-            <div class="new-position__wrapper-image">
+        </div>
+        <div class="new-position__item swiper-slide swiper-slide--triple-espresso container">
+          <div class="new-position__wrapper-image">
 
-              <picture>
+            <picture>
 
-                <!-- <source type="image/webp" media="(min-width: 1440px)"
+              <!-- <source type="image/webp" media="(min-width: 1440px)"
                   srcset="img/new-items/triple-espresso-desktop.webp 1x, img/new-items/triple-espresso-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/new-items/triple-espresso-tablet.webp 1x, img/new-items/triple-espresso-tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="img/new-items/triple-espresso-mobile.webp 1x, img/new-items/triple-espresso-mobile@2x.webp 2x"> -->
-                <source media="(min-width: 1440px)"
-                  srcset="img/new-items/triple-espresso-desktop.png 1x, img/new-items/triple-espresso-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/new-items/triple-espresso-tablet.png 1x, img/new-items/triple-espresso-tablet@2x.png 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/new-items/triple-espresso-desktop.png 1x, img/new-items/triple-espresso-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/new-items/triple-espresso-tablet.png 1x, img/new-items/triple-espresso-tablet@2x.png 2x">
 
 
-                <img class="new-position__item-image" src="img/new-items/triple-espresso-mobile.png" width="280"
-                  height="280" srcset="img/new-items/triple-espresso-mobile@2x.png 2x"
-                  alt="Внешний вид новинки кофе Тройной Эспрессо.">
-              </picture>
-            </div>
-            <div class="new-position__additional-wrapper">
-              <b class="new-position__banner banner">Новинка!</b>
-              <h3 class="new-position__item-name">Тройной Эспрессо</h3>
-              <p class="new-position__item-description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной
-                эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-              <div class="new-position__buy-wrapper">
-                <div class="new-position__price price">
-                  <span class="price__old">395₽</span>
-                  375₽
-                </div>
-                <div class="new-position__wrapper-button">
-                  <a class="new-position__button button" href="#">Заказать</a>
-                </div>
+              <img class="new-position__item-image" src="img/new-items/triple-espresso-mobile.png" width="280"
+                height="280" srcset="img/new-items/triple-espresso-mobile@2x.png 2x"
+                alt="Внешний вид новинки кофе Тройной Эспрессо.">
+            </picture>
+          </div>
+          <div class="new-position__additional-wrapper">
+            <b class="new-position__banner banner">Новинка!</b>
+            <h3 class="new-position__item-name">Тройной Эспрессо</h3>
+            <p class="new-position__item-description">Мощнее укола адреналина, чернее самой тёмной ночи, этот
+              тройной
+              эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+            <div class="new-position__buy-wrapper">
+              <div class="new-position__price price">
+                <span class="price__old">395₽</span>
+                375₽
+              </div>
+              <div class="new-position__wrapper-button">
+                <a class="new-position__button button" href="#">Заказать</a>
               </div>
             </div>
           </div>
-          <button class="new-position__prev" type="button">Предыдущий слайд</button>
-          <button class="new-position__next" type="button">Следующий слайд</button>
         </div>
-        <p class="new-position__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+
+
+
       </div>
+      <button class="new-position__prev swiper-button-prev" type="button">Предыдущий слайд</button>
+      <button class="new-position__next swiper-button-next" type="button">Следующий слайд</button>
+      <div class="new-position__toggles swiper-pagination">
+      </div>
+
+
     </section>
     <section class="advantages">
       <div class="advantages__wrapper container">
@@ -275,7 +282,8 @@
                       <input class="visually-hidden radio__control" type="radio" name="presense-of-milk" id="no-matter"
                         checked>
                       <span class="radio__mark-control"></span>
-                      Неважно
+                      <span class="radio__name">Неважно</span>
+
                     </label>
                   </li>
 
@@ -284,7 +292,8 @@
                       <input class="visually-hidden radio__control" type="radio" name="presense-of-milk"
                         id="regular-milk">
                       <span class="radio__mark-control"></span>
-                      Только животное
+                      <span class="radio__name">Только животное</span>
+
                     </label>
                   </li>
 
@@ -293,16 +302,18 @@
                       <input class="visually-hidden radio__control" type="radio" name="presense-of-milk"
                         id="organic-milk">
                       <span class="radio__mark-control"></span>
-                      Только растительное
+                      <span class="radio__name">Только растительное</span>
+
                     </label>
                   </li>
 
                   <li class="filters__item milk__item radio">
-                    <label class="radio__label radio__label--disabled" for="without-milk">
+                    <label class="radio__label" for="without-milk">
                       <input class="visually-hidden radio__control" type="radio" name="presense-of-milk"
                         id="without-milk" disabled>
                       <span class="radio__mark-control"></span>
-                      Без молока
+                      <span class="radio__name">Без молока</span>
+
                     </label>
                   </li>
 
@@ -316,7 +327,8 @@
                       <input class="visually-hidden checkbox__control" type="checkbox" name="brazil" id="brazil"
                         checked>
                       <span class="checkbox__mark-control"></span>
-                      Бразилия
+                      <span class="checkbox__name">Бразилия</span>
+
                     </label>
                   </li>
 
@@ -324,7 +336,8 @@
                     <label class="checkbox__label" for="ethiopia">
                       <input class="visually-hidden checkbox__control" type="checkbox" name="ethiopia" id="ethiopia">
                       <span class="checkbox__mark-control"></span>
-                      Эфиопия
+                      <span class="checkbox__name">Эфиопия</span>
+
                     </label>
                   </li>
 
@@ -332,7 +345,8 @@
                     <label class="checkbox__label" for="colombia">
                       <input class="visually-hidden checkbox__control" type="checkbox" name="colombia" id="colombia">
                       <span class="checkbox__mark-control"></span>
-                      Колумбия
+                      <span class="checkbox__name">Колумбия</span>
+
                     </label>
                   </li>
 
@@ -341,15 +355,17 @@
                       <input class="visually-hidden checkbox__control" type="checkbox" name="costa-rica"
                         id="costa-rica">
                       <span class="checkbox__mark-control"></span>
-                      Коста-Рика
+                      <span class="checkbox__name">Коста-Рика</span>
+
                     </label>
                   </li>
 
                   <li class="filters__item country__item checkbox">
-                    <label class="checkbox__label checkbox__label--disabled" for="peru">
+                    <label class="checkbox__label" for="peru">
                       <input class="visually-hidden checkbox__control" type="checkbox" name="peru" id="peru" disabled>
                       <span class="checkbox__mark-control"></span>
-                      Перу
+                      <span class="checkbox__name">Перу</span>
+
                     </label>
                   </li>
 
@@ -358,7 +374,8 @@
             </div>
             <div class="filters__button-wrapper">
               <button class="filters__button button" type="submit">Применить фильтр</button>
-              <button class="filters__button filters__button--reset button " type="reset">Сбросить фильтр</button>
+              <button class="filters__button filters__button-reset button button--reset" type="reset">Сбросить
+                фильтр</button>
             </div>
 
           </form>
@@ -504,10 +521,10 @@
           <ul class="pagination__list">
             <li class="pagination__item">
               <a class="pagination__link pagination__link--prev" href="#">
-                <svg class="pagination__prev-link" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="pagination__icon pagination__icon--prev" width="10" height="10" viewBox="0 0 10 10"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0 4.19153L1.23899 3L5 6.61694L8.76101 3L10 4.19153L5 9L0 4.19153Z" fill="#7859CF" />
+                    d="M0 4.19153L1.23899 3L5 6.61694L8.76101 3L10 4.19153L5 9L0 4.19153Z" />
                 </svg>
 
                 <span class="pagination__link-name">Назад</span>
@@ -524,10 +541,10 @@
             </li>
             <li class="pagination__item">
               <a class="pagination__link pagination__link--next" href="#">
-                <svg class="pagination__next-link" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="pagination__icon pagination__icon--next" width="10" height="10" viewBox="0 0 10 10"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0 4.19153L1.23899 3L5 6.61694L8.76101 3L10 4.19153L5 9L0 4.19153Z" fill="#7859CF" />
+                    d="M0 4.19153L1.23899 3L5 6.61694L8.76101 3L10 4.19153L5 9L0 4.19153Z" />
                 </svg>
                 <span class="pagination__link-name">Вперёд</span>
               </a>
@@ -667,7 +684,9 @@
 
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
+  <script src="./js/slider.js"></script>
   <script src="./js/map.js"></script>
   <script src="./js/script.js" defer></script>
 </body>

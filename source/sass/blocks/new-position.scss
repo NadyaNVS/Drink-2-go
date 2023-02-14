@@ -1,16 +1,3 @@
-.new-position {
-  background-color: var(--background-color-flat-white);
-
-  @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom,var(--background-color-flat-white) 92%, var(--basic-color) 8% );
-  }
-}
-
-// .new-position__wrapper{
-//   padding-top: 20px;
-//   padding-bottom: 60px;
-// }
-
 .new-position__item {
   display: flex;
   flex-wrap: wrap;
@@ -19,15 +6,17 @@
   padding-top: 20px;
   padding-bottom: 60px;
 
+
   @media (min-width: $tablet-width) {
     padding-top: 60px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 84px;
     padding-top: 30px;
     display: grid;
-    grid-template-columns: 600px 1fr;
+    grid-template-columns: 705px 1fr;
     column-gap: 30px;
   }
   }
@@ -78,6 +67,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 105px;
     order: 0;
   }
 }
@@ -103,6 +93,7 @@
 .new-position__buy-wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-self: center;
   min-width: 230px;
   justify-content: space-between;
   align-items: center;
@@ -118,13 +109,23 @@
 }
 
 .new-position__additional-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
   @media (min-width: $tablet-width) {
+    padding-left: 80px;
+    padding-right: 80px;
     margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
   @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    padding-right: 80px;
     align-items: start;
   }
 }
+

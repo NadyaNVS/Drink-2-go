@@ -14,6 +14,30 @@
   }
 }
 
+.range__scale--disabled{
+  cursor: default;
+}
+
+.range__scale--disabled .range__bar{
+  background-color: var(--basic-color-grey);
+}
+.range__scale--disabled .range__toggle {
+  cursor: default;
+  border-color: var(--basic-color-grey);
+  background-color: var(--background-color-lightest-grey);
+}
+
+.range__scale--disabled .range__toggle:hover::before,
+.range__scale--disabled .range__toggle:focus::before,
+.range__scale--disabled .range__toggle:active::before
+ {
+display: none;
+}
+
+.range__scale--disabled .range__toggle:active {
+  border-color: var(--basic-color-grey);
+}
+
 .range__bar {
  background-color: var(--alt-color-primary-lighter);
  height: 4px;
@@ -47,7 +71,7 @@
 
   &--min {
     top: -10px;
-    left: 0;
+    left: -1px;
   }
 
   &--max {
@@ -73,6 +97,15 @@
       background-color: var(--alt-color-primary-lighter);
     }
   }
+
+  // &:disabled {
+  //   border-color: var(--basic-color-grey);
+  //   background-color: var(--background-color-lightest-grey);
+
+  //   &::before {
+  //     display: none;
+  //   }
+  // } //или такие стили для неактивного состояния рейнджа
 }
 
 
@@ -139,6 +172,11 @@
   &:focus:not(:placeholder-shown) {
     border-color: var(--alt-color-primary-darker);
     outline: none;
+  }
+
+  &:disabled {
+    border-color: var(--alt-color-light-grey);
+    color: var(--basic-color-grey);
   }
 }
 

@@ -1,0 +1,151 @@
+.swiper-slide {
+  background-color: var(--background-color-lightest-grey);
+
+  &--flat-white {
+    background-color: var(--background-color-flat-white);
+
+    @media (min-width: $tablet-width) {
+      background: linear-gradient(to bottom,var(--background-color-flat-white) 78%, var(--basic-color) 22% );
+    }
+
+    @media (min-width: $desktop-width) {
+      background: none;
+      background-color: var(--background-color-flat-white);
+    }
+  }
+
+  &--lavander-latte {
+    background-color: var(--background-color-primary-medium);
+
+    @media (min-width: $tablet-width) {
+      background: linear-gradient(to bottom,var(--background-color-primary-medium) 78%, var(--basic-color) 22% );
+    }
+
+    @media (min-width: $desktop-width) {
+      background: none;
+      background-color: var(--background-color-primary-medium);
+    }
+  }
+
+  &--triple-espresso {
+    background-color: var(--background-color-grey);
+
+    @media (min-width: $tablet-width) {
+      background: linear-gradient(to bottom,var(--background-color-grey) 78%, var(--basic-color) 22% );
+    }
+
+    @media (min-width: $desktop-width) {
+      background: none;
+      background-color: var(--background-color-grey);
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+
+
+  &::after{
+    display: none;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--basic-color-primary);
+    mask-image: url("../img/slide-arrow.svg");
+    mask-repeat: no-repeat;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
+}
+
+.swiper-button-next{
+  &::before {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-button-prev{
+  left: 0;
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, var(--basic-color) 0%, var(--alt-color-black) 100%);
+  }
+
+  &:active {
+    background:linear-gradient(90deg, var(--alt-color-primary-opacity) 0%, var(--alt-color-primary-full-opacity) 100%);
+  }
+  &:disabled{
+    cursor: default;
+    background: transparent;
+    &::before {
+      background-color: var(--basic-color-grey);
+    }
+  }
+}
+
+
+
+.swiper-button-next {
+right: 0;
+  &:hover,
+  &:focus {
+  background: linear-gradient(-90deg, var(--basic-color) 0%, var(--alt-color-black) 100%);
+  }
+
+  &:active {
+    background:linear-gradient(-90deg, var(--alt-color-primary-opacity) 0%, var(--alt-color-primary-full-opacity) 100%);
+  }
+}
+
+
+.swiper-pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 70px;
+}
+
+.swiper-pagination-bullet {
+width: 62px;
+height: 4px;
+border-radius: 0;
+background-color: var(--basic-color);
+opacity: 1;
+
+  &:hover{
+background-color: var(--alt-color-primary-opacity);
+}
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--basic-color-primary);
+}

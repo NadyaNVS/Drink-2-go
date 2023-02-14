@@ -23,4 +23,16 @@
   height: 40px;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
+  fill: var(--basic-color-grey);
+
+  &:hover {
+    fill: var(--basic-color-primary);
+    background-color: var(--basic-color-secondary);
+  }
+
+  &:active {
+    fill: var(--basic-color-primary);
+    background-color: var(--alt-color-primary-opacity);
+  }
 }

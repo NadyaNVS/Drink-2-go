@@ -37,6 +37,7 @@
   box-sizing: border-box;
   // position: relative;
   text-transform: uppercase;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
@@ -62,8 +63,12 @@
   }
 
   &:active{
-    color: var(--basic-color-primary);
+    color: var(--basic-color-black);
     background-color: var(--basic-color-secondary);
+
+    @media (min-width: $tablet-width) {
+      color: var(--basic-color-primary);
+    }
   }
 }
 

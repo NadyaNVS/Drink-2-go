@@ -12,16 +12,36 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
 }
 .sorting__control {
   display: flex;
+  position: relative;
   width: 165px;
+  border-radius: 4px;
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    background-image: url("../img/arrow.svg");
+  }
 }
+
+
 
 .sorting__select {
   display: block;
@@ -32,14 +52,31 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  box-sizing: border-box;
   background-color: inherit;
   color: var(--basic-color-primary);
-  border: none;
+  border-radius: 4px;
+  border: 1px solid transparent;
   appearance: none;
-  background-image: url("../img/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
   cursor: pointer;
+
+
+
+  // &:hover {
+  //   background-color: var(--basic-color-secondary);
+  // }
+}
+
+.sorting__control:hover {
+  background-color: var(--basic-color-secondary);
+}
+
+.sorting__control:active {
+
+  background-color: inherit;
+  &::before {
+    transform: rotate(180deg);
+  }
 }
 
 

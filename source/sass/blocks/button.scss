@@ -12,4 +12,42 @@
   box-sizing: border-box;
   border: none;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--alt-color-primary-lighter);
+  }
+
+  &:active{
+    background-color: var(--alt-color-primary-darker);
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: var(--basic-color-grey);
+  }
+
+  &--disabled {
+    cursor: default;
+    background-color: var(--basic-color-grey);
+  }//для кнопки-ссылки
+
+  &--reset {
+    color: var(--basic-color-primary);
+    background-color: var(--basic-color);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--basic-color);
+    }
+
+
+    &:disabled {
+      cursor: default;
+      color: var(--basic-color);
+      background-color: var(--alt-color-light-grey);
+    }
+  }
 }
+

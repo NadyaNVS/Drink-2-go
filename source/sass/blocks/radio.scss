@@ -2,11 +2,6 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-
-    &--disabled {
-    color: var(--basic-color-grey);
-    cursor: default;
-  }
 }
 
 .radio__mark-control {
@@ -52,9 +47,26 @@
 
 .radio__control[type="radio"]:disabled + .radio__mark-control {
   border-color: var( --alt-color-light-grey);
+  background-color: var(--background-color-lightest-grey);
   cursor: default;
 
   &::before {
-    display: none;
+    background-color: var( --alt-color-light-grey);
   }
+}
+
+.radio__control[type="radio"]:checked:disabled + .radio__mark-control {
+  border-color: var( --alt-color-light-grey);
+  background-color: var(--background-color-lightest-grey);
+  cursor: default;
+
+  &::before {
+    background-color: var(--alt-color-light-grey);
+  }
+}
+
+
+.radio__control[type="radio"]:disabled ~ .radio__name {
+  color: var(--basic-color-grey);
+  cursor: default;
 }

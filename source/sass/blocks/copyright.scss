@@ -12,8 +12,31 @@
   width: 206px;
 }
 
+.copyright__logo-htmlacademy {
+  display: block;
+  fill: var(--basic-color-grey);
+}
+
+.copyright__link:hover .copyright__logo-htmlacademy {
+  fill: var(--basic-color-primary);
+}
+
+.copyright__link:active .copyright__logo-htmlacademy {
+  fill: var(--alt-color-primary-darker);
+}
+
 .copyright__label {
   font-size: 12px;
   line-height: 16px;
   color: var(--basic-color-grey);
 }
+
+.copyright__link:hover .copyright__label {
+  color: var(--basic-color-primary);
+}
+
+.copyright__link:active .copyright__label {
+  color: var(--alt-color-primary-darker);
+}
+
+
