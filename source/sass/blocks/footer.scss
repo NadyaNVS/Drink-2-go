@@ -17,11 +17,11 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 ;
+    padding: 40px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 0 ;
+    padding: 40px 0;
   }
 }
 
@@ -54,7 +54,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0;
-
   }
 }
 
@@ -72,7 +71,7 @@
 .footer__logo-description {
   display: none;
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: block;
     font-size: 14px;
     line-height: 20px;
@@ -95,8 +94,8 @@
 
 .footer__grid-wrapper {
   @media (min-width: $desktop-width) {
-display: grid;
-grid-template-columns: 318px 1fr;
-column-gap: 30px;
-}
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    column-gap: 30px;
+  }
 }

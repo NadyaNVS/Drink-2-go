@@ -29,13 +29,13 @@
   text-transform: uppercase;
 
   &:last-child {
-    margin-bottom:  0;
+    margin-bottom: 0;
   }
 }
 
 .information__link {
   text-decoration: none;
-  color: var( --basic-color-black);
+  color: var(--basic-color-black);
 
   &:hover,
   &:focus {
@@ -62,13 +62,13 @@
 .information__line-wrapper {
   position: relative;
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     top: 0;
     height: 1px;
     width: 100vw;
-    background-color: var( --basic-color-secondary);
+    background-color: var(--basic-color-secondary);
     margin-left: calc(50% - 50vw);
 
     @media (min-width: $tablet-width) {
@@ -83,7 +83,7 @@
       bottom: 0;
       height: 1px;
       width: 100vw;
-      background-color: var( --basic-color-secondary);
+      background-color: var(--basic-color-secondary);
       margin-left: calc(50% - 50vw);
 
       @media (min-width: $tablet-width) {
@@ -91,6 +91,4 @@
       }
     }
   }
-
-
 }

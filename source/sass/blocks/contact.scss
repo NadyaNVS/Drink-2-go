@@ -18,13 +18,10 @@
   }
 }
 
-// .contact__title {
-//   margin-bottom: 22px;
-// }
 
 .contact__icon {
   top: 2px;
-position: absolute;
+  position: absolute;
 }
 
 .contact__address {
@@ -41,5 +38,5 @@ position: absolute;
   line-height: 20px;
   margin-left: 20px;
   text-decoration: none;
-  color: var( --basic-color-black);
+  color: var(--basic-color-black);
 }

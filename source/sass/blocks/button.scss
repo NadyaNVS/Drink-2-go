@@ -18,7 +18,7 @@
     background-color: var(--alt-color-primary-lighter);
   }
 
-  &:active{
+  &:active {
     background-color: var(--alt-color-primary-darker);
   }
 
@@ -30,7 +30,7 @@
   &--disabled {
     cursor: default;
     background-color: var(--basic-color-grey);
-  }//для кнопки-ссылки
+  }
 
   &--reset {
     color: var(--basic-color-primary);
@@ -50,4 +50,3 @@
     }
   }
 }
-

@@ -7,20 +7,21 @@
   @media (min-width: $tablet-width) {
     width: 220px;
     margin-bottom: 33px;
-   }
+  }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 318px;
   }
 }
 
-.range__scale--disabled{
+.range__scale--disabled {
   cursor: default;
 }
 
-.range__scale--disabled .range__bar{
+.range__scale--disabled .range__bar {
   background-color: var(--basic-color-grey);
 }
+
 .range__scale--disabled .range__toggle {
   cursor: default;
   border-color: var(--basic-color-grey);
@@ -29,9 +30,8 @@
 
 .range__scale--disabled .range__toggle:hover::before,
 .range__scale--disabled .range__toggle:focus::before,
-.range__scale--disabled .range__toggle:active::before
- {
-display: none;
+.range__scale--disabled .range__toggle:active::before {
+  display: none;
 }
 
 .range__scale--disabled .range__toggle:active {
@@ -39,19 +39,19 @@ display: none;
 }
 
 .range__bar {
- background-color: var(--alt-color-primary-lighter);
- height: 4px;
- width: 240px;
- position: absolute;
- bottom: -1px;
+  background-color: var(--alt-color-primary-lighter);
+  height: 4px;
+  width: 240px;
+  position: absolute;
+  bottom: -1px;
 
- @media (min-width: $tablet-width) {
-  width: 190px;
- }
+  @media (min-width: $tablet-width) {
+    width: 190px;
+  }
 
- @media (min-width: $desktop-width) {
-  width: 274px;
-}
+  @media (min-width: $desktop-width) {
+    width: 274px;
+  }
 }
 
 .range__toggle {
@@ -87,8 +87,8 @@ display: none;
     }
   }
 
-&:hover,
-&:focus{
+  &:hover,
+  &:focus {
     &::before {
       display: block;
       content: "";
@@ -100,20 +100,12 @@ display: none;
   }
 
   &:active {
-    border-color: var( --basic-color-primary);
+    border-color: var(--basic-color-primary);
+
     &::before {
       background-color: var(--alt-color-primary-lighter);
     }
   }
-
-  // &:disabled {
-  //   border-color: var(--basic-color-grey);
-  //   background-color: var(--background-color-lightest-grey);
-
-  //   &::before {
-  //     display: none;
-  //   }
-  // } //или такие стили для неактивного состояния рейнджа
 }
 
 
@@ -136,9 +128,9 @@ display: none;
     @media (min-width: $tablet-width) {
       width: 7px;
       left: 106px;
-     }
+    }
 
-     @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       width: 10px;
       left: 154px;
     }
@@ -168,9 +160,9 @@ display: none;
     padding-top: 6px;
     padding-bottom: 6px;
     width: 93px;
-   }
+  }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 134px;
   }
 
@@ -196,9 +188,3 @@ display: none;
   -webkit-appearance: none;
 // stylelint-enable
 }
-
-// .range__input[type="number"] {
-//   // stylelint-disable
-//   -moz-appearance: textfield;
-// // stylelint-enable
-// }

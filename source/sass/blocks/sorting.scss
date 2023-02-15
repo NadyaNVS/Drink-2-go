@@ -19,6 +19,7 @@
     margin-right: 13px;
   }
 }
+
 .sorting__control {
   display: flex;
   position: relative;
@@ -49,11 +50,10 @@
 }
 
 
-
 .sorting__select {
   display: block;
   position: relative;
-  padding: 4px 27px 4px 10px ;
+  padding: 4px 27px 4px 10px;
   font: inherit;
   width: 100%;
   font-weight: 600;
@@ -83,9 +83,8 @@
 .sorting__control:active {
 
   background-color: inherit;
+
   &::before {
     transform: rotate(180deg);
   }
 }
-
-

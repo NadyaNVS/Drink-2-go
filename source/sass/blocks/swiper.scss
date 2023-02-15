@@ -5,7 +5,7 @@
     background-color: var(--background-color-flat-white);
 
     @media (min-width: $tablet-width) {
-      background: linear-gradient(to bottom,var(--background-color-flat-white) 77%, var(--basic-color) 23% );
+      background: linear-gradient(to bottom, var(--background-color-flat-white) 77%, var(--basic-color) 23%);
     }
 
     @media (min-width: $desktop-width) {
@@ -18,7 +18,7 @@
     background-color: var(--background-color-primary-medium);
 
     @media (min-width: $tablet-width) {
-      background: linear-gradient(to bottom,var(--background-color-primary-medium) 77%, var(--basic-color) 23% );
+      background: linear-gradient(to bottom, var(--background-color-primary-medium) 77%, var(--basic-color) 23%);
     }
 
     @media (min-width: $desktop-width) {
@@ -31,7 +31,7 @@
     background-color: var(--background-color-grey);
 
     @media (min-width: $tablet-width) {
-      background: linear-gradient(to bottom,var(--background-color-grey) 77%, var(--basic-color) 23% );
+      background: linear-gradient(to bottom, var(--background-color-grey) 77%, var(--basic-color) 23%);
     }
 
     @media (min-width: $desktop-width) {
@@ -53,7 +53,7 @@
   color: transparent;
 
 
-  &::after{
+  &::after {
     display: none;
   }
 
@@ -79,42 +79,42 @@
   }
 }
 
-.swiper-button-next{
-  &::before {
-    transform: rotate(180deg);
-  }
-}
-
-.swiper-button-prev{
+.swiper-button-prev {
   left: 0;
+
   &:hover,
   &:focus {
     background: linear-gradient(90deg, var(--basic-color) 0%, var(--alt-color-black) 100%);
   }
 
   &:active {
-    background:linear-gradient(90deg, var(--alt-color-primary-opacity) 0%, var(--alt-color-primary-full-opacity) 100%);
+    background: linear-gradient(90deg, var(--alt-color-primary-opacity) 0%, var(--alt-color-primary-full-opacity) 100%);
   }
-  &:disabled{
+
+  &:disabled {
     cursor: default;
     background: transparent;
+
     &::before {
       background-color: var(--basic-color-grey);
     }
   }
 }
 
-
-
 .swiper-button-next {
-right: 0;
+  right: 0;
+
+  &::before {
+    transform: rotate(180deg);
+  }
+
   &:hover,
   &:focus {
-  background: linear-gradient(-90deg, var(--basic-color) 0%, var(--alt-color-black) 100%);
+    background: linear-gradient(-90deg, var(--basic-color) 0%, var(--alt-color-black) 100%);
   }
 
   &:active {
-    background:linear-gradient(-90deg, var(--alt-color-primary-opacity) 0%, var(--alt-color-primary-full-opacity) 100%);
+    background: linear-gradient(-90deg, var(--alt-color-primary-opacity) 0%, var(--alt-color-primary-full-opacity) 100%);
   }
 }
 
@@ -127,7 +127,7 @@ right: 0;
   }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -135,15 +135,15 @@ right: 0;
 }
 
 .swiper-pagination-bullet {
-width: 62px;
-height: 4px;
-border-radius: 0;
-background-color: var(--basic-color);
-opacity: 1;
+  width: 62px;
+  height: 4px;
+  border-radius: 0;
+  background-color: var(--basic-color);
+  opacity: 1;
 
-  &:hover{
-background-color: var(--alt-color-primary-opacity);
-}
+  &:hover {
+    background-color: var(--alt-color-primary-opacity);
+  }
 }
 
 .swiper-pagination-bullet-active {

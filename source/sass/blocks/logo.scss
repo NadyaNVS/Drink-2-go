@@ -10,8 +10,9 @@
 
 .logo__image {
   @media (min-width: $tablet-width) {
-  width: 82px;
+    width: 82px;
   }
+
   @media (min-width: $desktop-width) {
     width: 170px;
   }

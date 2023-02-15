@@ -39,8 +39,6 @@
 
 .new-position__banner {
   margin-bottom: 4px;
-
-
 }
 
 .new-position__item-name {
@@ -63,11 +61,11 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left:auto;
+    margin-left: auto;
     order: 0;
   }
 }
@@ -92,6 +90,7 @@
 
 .new-position__item-description br {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
@@ -132,6 +131,7 @@
     padding-right: 80px;
     max-width: 608px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;

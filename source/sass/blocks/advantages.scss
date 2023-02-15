@@ -1,8 +1,8 @@
 .advantages__wrapper {
-  padding: 46px 0 60px;
+  padding: 50px 0 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 0 100px;
+    padding: 60px 0 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,6 +59,7 @@
   &:last-child {
     margin-bottom: 0;
   }
+
   @media (min-width: $tablet-width) {
     align-items: start;
     align-self: flex-start;
@@ -118,35 +119,38 @@
     line-height: 24px;
     text-align: left;
   }
+
   @media (min-width: $desktop-width) {
-  text-align: center;
+    text-align: center;
   }
 }
 
-.advantages__item--time{
+.advantages__item--time {
   @media (min-width: $tablet-width) {
-  padding-left: 82px;
-  }
-  @media (min-width: $desktop-width) {
-    padding-left: 0;
-  }
-}
-.advantages__item--power{
-  @media (min-width: $tablet-width) {
-  padding-left: 82px;
+    padding-left: 82px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
+  }
 }
+
+.advantages__item--power {
+  @media (min-width: $tablet-width) {
+    padding-left: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .advantages__item--time::before {
-background-image: url("../img/icon-time.svg");
+  background-image: url("../img/icon-time.svg");
 
   @media (min-width: $tablet-width) {
     top: 3px;
-    left:10px;
+    left: 10px;
   }
 
   @media (min-width: $desktop-width) {

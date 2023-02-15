@@ -9,11 +9,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    }
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-bottom: 0;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .filters__group {
@@ -24,19 +24,18 @@
 
 
   @media (min-width: $tablet-width) {
-
-    &--cost{
+    &--cost {
       min-width: 220px;
       margin-right: 21px;
     }
 
-    &--milk{
+    &--milk {
       min-width: 210px;
       margin-right: 38px;
     }
 
-    &--country{
-    min-width: 197px;
+    &--country {
+      min-width: 197px;
     }
   }
 
@@ -69,9 +68,11 @@
 
   &--cost {
     margin-bottom: 32px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 30px;
     }
+
     @media (min-width: $desktop-width) {
       margin-bottom: 31px;
     }
@@ -79,6 +80,7 @@
 
   &--milk {
     margin-bottom: 22px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 19px;
     }
@@ -86,6 +88,7 @@
 
   &--country {
     margin-bottom: 20px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 19px;
     }
@@ -107,32 +110,30 @@
     margin-bottom: 20px;
   }
 
-&:last-child {
-  margin-bottom: 0;
-}
-
-
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .filters__button-wrapper {
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-align-self: center;
-max-width: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-self: center;
+  max-width: 160px;
 
-@media (min-width: $tablet-width) {
-  display: grid;
-  grid-template-columns: 148px 138px;
-  column-gap: 30px;
-  margin-right: 55px;
-  max-width: none;
-}
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 148px 138px;
+    column-gap: 30px;
+    margin-right: 55px;
+    max-width: none;
+  }
 
-@media (min-width: $desktop-width) {
-  grid-template-columns: repeat(2, 150px);
-  column-gap: 18px;
-}
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 150px);
+    column-gap: 18px;
+  }
 }
 
 .filters__button {
@@ -145,7 +146,7 @@ max-width: 160px;
   }
 }
 
-.filters__button-reset{
+.filters__button-reset {
   font-size: 14px;
   padding: 10px 16px;
 
