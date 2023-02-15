@@ -5,22 +5,12 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  column-gap: 19px;
   width: 160px;
-
-  @media (min-width: $desktop-width) {
-    justify-content: space-between;
-  }
 }
 
-.social__item {
-  margin-right: 19px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
 
 .social__link {
   display: flex;

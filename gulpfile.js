@@ -6,12 +6,13 @@ import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import sharp from 'sharp';
+import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+
 
 // Styles
 
@@ -50,7 +51,7 @@ const scripts = () => {
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-  .pipe(sharp())
+  .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
 }
 
@@ -61,13 +62,13 @@ const copyImages = () => {
 
 //WebP
 
-// const createWebp = () => {
-//   return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'])
-//   .pipe(squoosh({
-//     webp: {}
-//   }))
-//   .pipe(gulp.dest('build/img'));
-// }
+const createWebp = () => {
+  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'])
+  .pipe(squoosh({
+    webp: {}
+  }))
+  .pipe(gulp.dest('build/img'));
+}
 
 
 //SVG
@@ -146,6 +147,7 @@ export const build = gulp.series(
     html,
     styles,
     scripts,
+    createWebp,
     svg,
     createSprite
   )
@@ -161,6 +163,7 @@ export default gulp.series(
     html,
     styles,
     scripts,
+    createWebp,
     svg,
     createSprite
   ),

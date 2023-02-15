@@ -1,12 +1,12 @@
 .advantages__wrapper {
-  padding: 50px 0 60px;
+  padding: 46px 0 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 100px;
+    padding: 36px 0 100px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 120px;
+    padding: 99px 0 120px;
   }
 }
 
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 81px;
   }
 }
 
@@ -61,6 +61,7 @@
   }
   @media (min-width: $tablet-width) {
     align-items: start;
+    align-self: flex-start;
     margin-bottom: 0;
     padding-left: 71px;
   }
@@ -96,6 +97,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 4px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;

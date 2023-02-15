@@ -1,15 +1,21 @@
 .radio__label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-left: 1px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .radio__mark-control {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;

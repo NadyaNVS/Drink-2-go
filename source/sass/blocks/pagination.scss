@@ -6,12 +6,17 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-end;
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1px;
   }
 }
 
 .pagination__item {
   margin-right: 20px;
+  margin-bottom: 4px;
 
   &:last-child {
     margin-right:  0;
@@ -56,10 +61,10 @@
   }
   @media (min-width: $tablet-width) {
   &--next {
-    padding: 10px 20px;
+    padding: 8px 20px;
       }
   &--prev {
-    padding: 10px 20px;
+    padding: 8px 20px;
           }
     }
 }

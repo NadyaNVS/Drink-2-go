@@ -17,6 +17,10 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding: 43px 0 ;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 40px 0 ;
   }
 }

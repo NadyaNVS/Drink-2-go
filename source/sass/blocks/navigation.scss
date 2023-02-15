@@ -11,11 +11,6 @@
   justify-content: space-between;
   align-items: center;
 
-// .navigation__additional-wrapper {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
   @media (min-width: $tablet-width) {
     align-items: center;
   }
@@ -23,8 +18,7 @@
 
 .navigation > .container {
   @media (max-width: $mobile-width-only) {
-    margin: 0;
-    width: auto;
+    width: 320px;
   }
 }
 
